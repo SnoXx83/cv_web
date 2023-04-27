@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{asset('css/portfolio.css')}}">
+{% endblock stylesheets %}
+
+{% block title %}Hello PortfolioController!{% endblock %}
+
+{% block body %}
+<div>
+    <div class="profil m-20">
+        <a class="d-flex align-items-center " href="{{path('aboutme')}}">
+            <img src="{{asset('images/profil.jpg')}}" alt="photo_de_profil">
+            <h1 class="m-10">Maxime Larquetoux</h1>
+        </a>
+    </div>
+</div>
+<div class=" content d-flex justify-content-center flex-row-wrap m-50">
+{% for project in projects %}
+    <a href="{{ path('project', {id: project.id})}}"class="card" style="background-image: url({{project.img1}});">
+        <h1>{{project.title}}</h1>        
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

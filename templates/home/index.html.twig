@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}    
+    <link rel="stylesheet" href="{{asset('css/home_cv.css')}}">
+    {% endblock stylesheets %}
+
+
+{% block title %}CV Maxime LARQUETOUX!{% endblock %}
+
+{% block body %}
+<div>
+    <div class="profil m-20">
+        <a class="d-flex align-items-center " href="{{path('aboutme')}}">
+            <img src="{{asset('images/profil.jpg')}}" alt="photo_de_profil">
+            <h1 class="m-10">Maxime Larquetoux</h1>
+        </a>
+    </div>
+</div>
+<div class="block d-flex justify-content-center text-center">
+    <a class="" href="{{path('portfolio')}}">
+        <img src="{{asset('images/portfolio.jpg')}}" alt="image_portfolio">
+        <h1>Portfolio</h1>
+    </a>
+    <a class="" href="">
+        <img src="{{asset('images/experiences.jpg')}}" alt="image_experiences">
+        <h1>Experiences</h1>
+    </a>
+    <a class="" href="">
+        <img src="{{asset('images/competences.jpg')}}" alt="image_competences">
+        <h1 >Compétences</h1>
+    </a>
+</div>
+
+{% endblock %}

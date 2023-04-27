@@ -1,0 +1,79 @@
+body {
+    background: url('../images/bg.jpg');
+    background-size: cover;
+}
+
+.card {
+    margin: 25px;
+    border-radius: 15px;
+    border: 5px solid #00337C;
+    box-shadow: var(--box-shadow);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(2, 2, 2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card h1 {
+    border-radius: 15px;
+    background-color: rgba(240, 248, 255, 0.162);
+    text-align: center;
+    margin: -1px;
+    width: 450px;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    border: var(--border-5);
+    box-shadow: none;
+}
+
+.card h1:hover {
+    backdrop-filter: blur(1px);
+}
+
+@media screen and (max-width:1650px) {
+    .content {
+        margin: 200px 0px;
+    }
+
+    .card h1 {
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:1520px) {
+    .card h1 {
+        width: 500px;
+        font-size: 40px
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .card h1 {
+        width: 800px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .card h1 {
+        width: 500px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .card h1 {
+        width: 350px;
+        height: 350px;
+        font-size: 30px;
+    }
+}

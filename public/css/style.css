@@ -1,0 +1,205 @@
+:root {
+    --primary: rgb(24, 36, 78);
+    --secondary: linear-gradient(0deg, rgb(146, 121, 58) 0%, rgb(230, 184, 68) 50%);
+    --font-family: "Open Sans", sans-serif;
+    --border: 1px solid rgb(255, 255, 255);
+    --border-5: 5px solid white;
+    --box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.629);
+    --box-shadow-hover: 15px 15px 5px rgba(0, 0, 0, 0.629);
+    --color-primary: white;
+    --color-dark: #000000;
+}
+
+/*DEBUG*/
+.b1 {
+    background-color: red;
+}
+
+.b2 {
+    background-color: blue;
+}
+
+.b3 {
+    background-color: yellow;
+}
+
+.b4 {
+    background-color: green;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* background:url('../images/background_body.jpg'); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: var(--font-family);
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--color-dark);
+} */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Flex*/
+.d-flex {
+    display: flex;
+}
+
+.flex-row-nowrap {
+    flex-flow: row nowrap;
+}
+
+.flex-row-wrap {
+    flex-flow: row wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-fill {
+    flex: 1;
+}
+
+/*Margins*/
+.m-5 {
+    margin: 5px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.m-50 {
+    margin: 50px
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+
+/* Paddings */
+.p-5 {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*GENERAL*/
+
+/*Profil*/
+.profil {
+    padding: 0px;
+    max-width: 400px;
+    border-radius: 100px 25px 25px 100px;
+    overflow: hidden;
+    color: aliceblue;
+    font-size: small;
+    text-shadow: 1px 1px 2px rgb(2, 2, 2);
+    background: url('../images/hoverCard2.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--box-shadow);
+    transition: 0.4s;
+    border: var(--border);
+}
+
+.profil a img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.profil:hover {
+    background: url('../images/hoverCard2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    border: none;
+}

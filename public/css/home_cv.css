@@ -1,0 +1,104 @@
+body {
+    background: url('../images/bg.jpg');
+    background-size: cover;
+}
+
+.block {
+    margin: 0px;
+}
+
+.block a {
+    margin: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* background: var(--secondary); */
+    color: aliceblue;
+    box-shadow: var(--box-shadow);
+    text-shadow: 1px 1px 2px rgb(2, 2, 2);
+    background: url('../images/hoverCard2.jpg');
+    background-size: cover;
+    border: var(--border);
+    transition: 0.4s;
+}
+
+.block a:hover {
+    border: none;
+    background: url('../images/hoverCard2.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: none;
+}
+
+.block a img {
+    width: 400px;
+}
+
+.block a h1 {
+    padding: 50px;
+    margin: 50px;
+    font-size: x-large;
+}
+
+
+@media screen and (max-width:1400px) {
+    .block a {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .profil {
+        max-width: 100%;
+        margin: 0px;
+        padding: 25px;
+        border-radius: 0px;
+
+    }
+
+
+    .block {
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .block a {
+        margin: 20px;
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+    .block {
+        margin: 15px;
+    }
+
+    .block a {
+        /* flex-direction: column; */
+        align-items: center;
+        padding: 0px;
+        justify-content: space-between;
+        margin: 25px 0px;
+    }
+
+    .block a h1 {
+        /* margin: 0px; */
+        padding: 10px;
+    }
+
+    .block a img {
+        margin: 0px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .block a {
+        flex-direction: column;
+    }
+
+    .block a img {
+        width: 600px;
+    }
+}
