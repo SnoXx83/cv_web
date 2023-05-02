@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ExperienceController!{% endblock %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{asset('css/experience.css')}}">
+{% endblock stylesheets %}
+
+{% block body %}
+<div class="d-flex justify-content-center flex-column">
+    <article>
+        <section>
+            <h1>Inetum (GFI) :</h1>
+            <div class="d-flex align-items-center text-justify">
+                <img src="{{asset('images/Inetum.jpg')}}" alt="logo_inetum" width="500px">
+                <div class="m-50">Inetum est une ESN (Entrprise de Services du Numérique) agile qui fournit des services
+                    et des solutions numériques, et un
+                    groupe mondial qui aide les entreprises et les institutions à tirer le meilleur parti du digital
+                    flow.
+                    Durant ce stage, j'ai dû créer un système de gestion de licence avec une interface utilisateur pour
+                    une solution (X7) déjà
+                    existante qui propose selon beaucoup de critères différents d'effectuer des factures en pour les
+                    relevés de compteur d'eau à l'international.
+                </div>
+            </div>
+        </section>
+    </article>
+    <img src="{{asset('images/flech.png')}}" alt="fleche" width="100px" style="margin: 0% 47%; transform:rotate(90deg)">
+    <article>
+        <section>
+            <h1>La Petite Patronne :</h1>
+            <div class="d-flex align-items-center text-justify">
+                <div class="m-50">La petite patronne est une micro-entreprise qui se situe à Taradeau, dans une petite
+                    ville du Var. Christelle, patronne de l'entreprise, est passionné de couture vend sur son site web
+                    des patrons de coutures.
+                    Pendant ce stage, j'ai du effectuer une maquette de conception d'un nouveau site web e-commerce en
+                    prenant le site déjà existant. J'ai ensuite créé le site web à partir du CMS Wordpress avec le thème
+                    Astra et de différents plugins.</div>
+                <img src="{{asset('images/la_petite_patronne.jpg')}}" alt="logo_la_petie_patronne" width="500px">
+            </div>
+        </section>
+    </article>
+    <img src="{{asset('images/flech.png')}}" alt="fleche" width="100px" style="margin: 0% 47%; transform:rotate(90deg)">
+
+    <article>
+        <section>
+            <h1>Twineo :</h1>
+            <div class="d-flex align-items-center text-justify">
+                <img src="{{asset('images/twineo.jpg')}}" alt="logo_twineo" width="500px">
+                <div class="m-50">Twineo est une SARL qui à été créée dans le but d'apporter grâce à son service One
+                    Head, de l'informatique simple et efficace avec des tarifs adaptés à la taille de l'entreprise.
+                    Ce stage m'a permis d'apprendre le php avec un framework propre à l'entreprise que j'ai utilisé pour
+                    implémenter des parties de code sur un site déjà existant.
+                </div>
+            </div>
+        </section>
+    </article>
+</div>
+{% endblock %}

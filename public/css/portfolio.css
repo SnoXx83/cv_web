@@ -57,22 +57,36 @@ body {
 }
 
 @media screen and (max-width:1120px) {
+    .content {
+        margin: 100px 0px;
+    }
+
     .card h1 {
-        width: 800px;
+        width: 900px;
         font-size: 40px;
     }
 }
 
-@media screen and (max-width:820px) {
+@media screen and (max-width:970px) {
     .card h1 {
-        width: 500px;
+        width: 600px;
         font-size: 50px;
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:630px) {
+    .content {
+        margin: 50px 0px;
+    }
+
     .card h1 {
-        width: 350px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .card h1 {
+        width: 300px;
         height: 350px;
         font-size: 30px;
     }

@@ -11,9 +11,15 @@
 {% endblock javascripts %}
 
 {% block body %}
-
-<div class="project d-flex flex-column justify-content-center"
-    style="background: url({{projects.img1}}); background-attachment: fixed; background-repeat:no-repeat; background-size: 100vh contain;">
+<style>
+    body {
+        background: url("{{projects.img1}}");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100vh contain;
+    }
+</style>
+<div class="project d-flex flex-column justify-content-center">
     <div class="ProjectName">
     </div>
     <div class="content">

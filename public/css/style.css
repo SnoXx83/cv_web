@@ -172,6 +172,10 @@ ul {
     text-align: center;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 /*GENERAL*/
 
 /*Profil*/
@@ -201,5 +205,16 @@ ul {
     background: url('../images/hoverCard2.jpg');
     background-size: cover;
     background-position: bottom;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+
+@media screen and (max-width:1250px) {
+    .profil {
+        max-width: 100%;
+        margin: 0px;
+        padding: 25px;
+        border-radius: 0px;
+
+    }
 }

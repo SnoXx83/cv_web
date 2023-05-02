@@ -1,0 +1,24 @@
+body {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+}
+
+article {
+    margin: 100px 200px;
+    padding: 0px 50px 100px 50px;
+    background: rgba(240, 248, 255, 0.419);
+    background-position: center;
+    background-size: contain;
+    /* border: var(--border); */
+    border-radius: 25px;
+    box-shadow: rgba(240, 248, 255, 0.258) 20px 20px 1px 1px;
+}
+
+section {
+    text-align: center;
+}
+
+section h1 {
+    font-size: xx-large;
+    margin: 50px;
+}
