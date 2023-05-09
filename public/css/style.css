@@ -1,13 +1,13 @@
 :root {
-    --primary: rgb(24, 36, 78);
-    --secondary: linear-gradient(0deg, rgb(146, 121, 58) 0%, rgb(230, 184, 68) 50%);
+    --primary: aliceblue;
+    --secondary: rgb(2, 200, 255);
+    --color-dark: #0e1521;
     --font-family: "Open Sans", sans-serif;
     --border: 1px solid rgb(255, 255, 255);
-    --border-5: 5px solid white;
+    --border-5: 5px solid rgb(2 200 255);
     --box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.629);
-    --box-shadow-hover: 15px 15px 5px rgba(0, 0, 0, 0.629);
-    --color-primary: white;
-    --color-dark: #000000;
+    --box-shadow-hover: 15px 15px 5px rgb(2, 200, 255);
+
 }
 
 /*DEBUG*/
@@ -38,20 +38,11 @@
 
 
 body {
-    /* background:url('../images/background_body.jpg'); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
     font-family: var(--font-family);
 }
-
-/* h1,
-h2,
-h3,
-h4,
-h5 {
-    color: var(--color-dark);
-} */
 
 a {
     color: inherit;
@@ -97,6 +88,10 @@ a {
 
 .justify-content-evenly {
     justify-content: space-evenly;
+}
+
+.justify-content-around {
+    justify-content: space-around;
 }
 
 .flex-fill {
@@ -178,43 +173,70 @@ ul {
 
 /*GENERAL*/
 
-/*Profil*/
-.profil {
-    padding: 0px;
-    max-width: 400px;
-    border-radius: 100px 25px 25px 100px;
-    overflow: hidden;
+/*header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: aliceblue;
     font-size: small;
     text-shadow: 1px 1px 2px rgb(2, 2, 2);
-    background: url('../images/hoverCard2.jpg');
+    background-color: #0e1521;
     background-size: cover;
     background-position: center;
     box-shadow: var(--box-shadow);
     transition: 0.4s;
-    border: var(--border);
+    border-bottom: var(--border);
 }
 
-.profil a img {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
+.profil {
+    margin: 0px;
+    padding-right: 50px;
+    border-bottom: 5px solid var(--primary);
+    border-right: 5px solid var(--primary);
+    box-shadow: 5px 5px 1px var(--secondary);
+    transition: 0.2s;
 }
 
 .profil:hover {
-    background: url('../images/hoverCard2.jpg');
-    background-size: cover;
-    background-position: bottom;
-    border: 1px solid rgba(255, 255, 255, 0);
+    color: var(--secondary);
+    border-right: 5px solid var(--secondary);
+    border-bottom: 5px solid var(--secondary);
+    box-shadow: none;
+
+}
+
+.header a img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+}
+
+.navbar a {
+    border-right: 1px solid var(--primary);
+    padding: 45px 50px;
+    padding-right: 60px;
+    justify-content: space-around;
+    font-size: large;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: var(--secondary);
+    border-bottom: 6px solid var(--secondary);
 }
 
 
-@media screen and (max-width:1250px) {
-    .profil {
-        max-width: 100%;
-        margin: 0px;
-        padding: 25px;
-        border-radius: 0px;
 
+@media screen and (max-width:1440px) {
+    .profil {
+        padding-right: 0px;
     }
+
+    .navbar a {
+        padding: 10px 5px;
+    }
+
 }

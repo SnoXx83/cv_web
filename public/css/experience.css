@@ -6,12 +6,14 @@ body {
 article {
     margin: 100px 200px;
     padding: 0px 50px 100px 50px;
-    background: rgba(240, 248, 255, 0.419);
+    background: #0e1521;
     background-position: center;
     background-size: contain;
-    /* border: var(--border); */
+    font-size: x-large;
     border-radius: 25px;
-    box-shadow: rgba(240, 248, 255, 0.258) 20px 20px 1px 1px;
+    color: aliceblue;
+    box-shadow: var(--box-shadow-hover);
+
 }
 
 section {
@@ -21,4 +23,5 @@ section {
 section h1 {
     font-size: xx-large;
     margin: 50px;
+    color: var(--secondary);
 }

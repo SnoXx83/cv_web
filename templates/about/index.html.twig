@@ -2,47 +2,52 @@
 
 {% block stylesheets %}
 {{ parent() }}
-<link rel="stylesheet" href="{{asset('css/profil.css')}}">
+<link rel="stylesheet" href="css/profil.css">
 {% endblock stylesheets %}
 
 {% block title %}A propos de moi{% endblock %}
 
 {% block body %}
-<div class="about">
-    <div class="speech d-flex flex-column justify-content-center align-items-center">
-        <img src="{{asset('images/profil.jpg')}}" alt="image de profil" height="200px" width="200px">
-        <h1>Salut !</h1>
-        <p>Je m'appelle Maxime LARQUETOUX, j'ai 24 ans et je suis un développeur full stack junior. Quand j'ai effectué
-            mon tout premier stage il y a 2 ans, j'ai tout de suite su que j'étais fais pour devenir développeur.
-            J'ai donc commencé par faire une premiere formation de 3 mois en developpeur web puis une deuxième
-            certifiante en developpeur full stack de 10 mois avec un stage de 3mois dans une grande ESN.
-        </p>
+<div class="">
+    <div class="about">
+        <div class="speech d-flex flex-column justify-content-center align-items-center">
+            <img src="images/profil.jpg" alt="image de profil" height="200px" width="200px">
+            <h1>Salut !</h1>
+            <p>Je m'appelle Maxime LARQUETOUX, j'ai 24 ans et je suis un développeur full stack junior. Quand j'ai
+                effectué
+                mon tout premier stage il y a 2 ans, j'ai tout de suite su que j'étais fais pour devenir développeur.
+                J'ai donc commencé par faire une premiere formation de 3 mois en developpeur web puis une deuxième
+                certifiante en developpeur full stack de 10 mois avec un stage de 3mois dans une grande ESN.
+            </p>
+        </div>
     </div>
 
-    <section>
+    <section class="search">
         <h2>À la recherche d'une entreprise</h2>
         <p>Je suis actuellement inscrits à la WildcodeSchool en Licence Professionnelle (Concepteur Développeur
             d'Applications) et à la recherche d'une entreprise pour effectuer un contrat d'alternance de 1 an sous la
-            forme de 1 semaine en centre et 3 semaines en entreprise.</p>
+            forme de 1 semaine en centre et 3 semaines en entreprise.
+        </p>
     </section>
 
-    <section>
+    <section class="img_portfolio">
         <h2>Portfolio</h2>
         <div class="block d-flex">
-            <img src="{{asset('images/sdbm/SDBM_img1.jpg')}}">
-            <img src="{{asset('images/creative/CREATIVE_img1.jpg')}}">
-            <img src="{{asset('images/street/STREET_img1.jpg')}}">
+            <img src="images/sdbm/SDBM_img1.jpg">
+            <img src="images/creative/CREATIVE_img1.jpg">
+            <img src="images/street/STREET_img1.jpg">
         </div>
     </section>
 
-    <section>
+
+    <section class="reseaux">
         <h2>Mes Réseaux</h2>
-        <div class="reseaux d-flex">
+        <div class="icons d-flex">
             <a href="https://github.com/SnoXx83">
-                <img src="{{asset('images/github.png')}}" alt="" width="100%" height="100%">
+                <img src="images/github.png" alt="" width="100%" height="100%">
             </a>
             <a href="https://www.linkedin.com/in/maxime-larquetoux-40b7751a3/">
-                <img src="{{asset('images/linkedin.png')}}" alt="" width="100%">
+                <img src="images/linkedin.png" alt="" width="100%">
             </a>
 
         </div>

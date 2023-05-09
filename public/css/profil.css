@@ -8,30 +8,40 @@ body {
 
 h2 {
     font-size: 30px;
-    color: #F9D870;
-    margin: 100px 0px;
+    color: var(--secondary);
+    margin-bottom: 100px;
 
 }
 
 .about {
-    width: 100%;
-    padding: 0% 10%;
-    margin-top: 400px;
+    padding: 300px 300px 0px 300px;
+    margin-top: 850px;
 }
 
+
 .speech {
-    margin: 0% 15%;
-    padding: 50px;
+    border: 2px solid var(--secondary);
+    margin-top: -45%;
+    padding: 100px;
     text-align: center;
     font-size: 20px;
-    background: rgb(255, 255, 255);
+    background: var(--color-dark);
     border-radius: 20px;
     box-shadow: 1px 2px 15px black;
 }
 
 .speech img {
+    border: 5px solid var(--color-dark);
     border-radius: 50%;
-    margin-top: -150px;
+    margin-top: -200px;
+}
+
+.speech h1 {
+    color: var(--secondary);
+}
+
+.speech p {
+    color: var(--primary);
 }
 
 .speech img,
@@ -41,7 +51,7 @@ p {
 }
 
 section {
-    margin: 250px 0px;
+    margin: 100px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -49,8 +59,20 @@ section {
 }
 
 section p {
-    color: white;
+    color: var(--primary);
     font-size: x-large;
+}
+
+.search {
+    padding: 200px;
+}
+
+.img_portfolio {
+    padding: 150px 0px;
+    background-color: var(--color-dark);
+    border-top: 5px solid var(--secondary);
+    border-bottom: 5px solid var(--secondary);
+
 }
 
 
@@ -70,34 +92,39 @@ section p {
     margin: 20px;
     height: 300px;
     border-radius: 20px;
-    border: 5px solid #F9D870;
+    border: 5px solid var(--secondary);
     box-shadow: var(--box-shadow);
     transition: .5s;
 }
 
 .block img:hover {
-    border: 5px solid white;
+    border: 5px solid var(--primary);
 
 }
 
 .reseaux {
+    padding: 200px;
+
+}
+
+.icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.reseaux a {
-    box-shadow: #F9D870 15px 5px 2px;
+.icons a {
+    box-shadow: var(--secondary) 15px 5px 2px;
     margin: 50px;
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: #F9D870 5px solid;
-    background-color: #F9D870;
+    border: var(--secondary) 5px solid;
+    background-color: var(--secondary);
     transition: 0.3s;
 }
 
-.reseaux a:hover {
+.icons a:hover {
     box-shadow: none;
 }
 
@@ -113,7 +140,6 @@ section p {
 
 @media screen and (max-width:1150px) {
     .block img {
-        /* width: 250px; */
         margin: 5px;
     }
 
@@ -132,7 +158,6 @@ section p {
     }
 
     .block img {
-        /* width: 500px; */
         width: 100%;
         margin: 15px;
     }

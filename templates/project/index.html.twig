@@ -4,10 +4,10 @@
 
 {% block stylesheets %}
 {{ parent() }}
-<link rel="stylesheet" href="{{asset('css/project.css')}}">
+<link rel="stylesheet" href="css/project.css">
 {% endblock stylesheets %}
 {% block javascripts %}
-<script src="{{asset('js/index.js')}}"></script>
+<script src="js/index.js"></script>
 {% endblock javascripts %}
 
 {% block body %}
@@ -22,27 +22,27 @@
 <div class="project d-flex flex-column justify-content-center">
     <div class="ProjectName">
     </div>
-    <div class="content">
-        <div class="resume">
+    <div class=" content">
+        <article class="resume">
             <h2>{{projects.title}}</h2>
             <div class="block">
                 {{projects.resume}}
             </div>
-        </div>
+        </article>
 
-        <div class="missions">
+        <article class="missions">
             <h2>Missions et Conclusion du projet:</h2>
             <div class="block">
                 {{projects.assignments}}
             </div>
-        </div>
-        <div class="technology">
+        </article>
+        <article class="technology">
             <h2>Technologies Utilisées</h2>
             <div class="logo">
                 <img src="{{projects.technology}}" alt="image technologie" width="1000px">
             </div>
-        </div>
-        <div class="picture">
+        </article>
+        <article class="picture">
             <h2>Photo du projet</h2>
             <div class="other_picture">
                 <img src="{{projects.img1}}" alt="image1" width="500px">
@@ -50,7 +50,7 @@
                 <img src="{{projects.img3}}" alt="image3" width="500px">
                 <img src="{{projects.img4}}" alt="image4" width="500px">
             </div>
-        </div>
+        </article>
     </div>
 </div>
 {% endblock %}
