@@ -4,7 +4,7 @@ body {
 }
 
 article {
-    margin: 100px 200px;
+    margin: 150px 200px;
     padding: 0px 50px 100px 50px;
     background: #0e1521;
     background-position: center;
@@ -13,7 +13,6 @@ article {
     border-radius: 25px;
     color: aliceblue;
     box-shadow: var(--box-shadow-hover);
-
 }
 
 section {
@@ -24,4 +23,70 @@ section h1 {
     font-size: xx-large;
     margin: 50px;
     color: var(--secondary);
+}
+
+.content img {
+    width: 50%;
+}
+
+.fleche {
+    width: "100%";
+}
+
+@media screen and (max-width:1440px) {
+    article {
+        margin: 100px 100px;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    article {
+        margin: 100px 50px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content img {
+        margin: 50px 0px;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .content div {
+        margin: 0px;
+    }
+
+    article {
+        margin: 100px 15px;
+        box-shadow: none;
+    }
+
+    .content img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:630px) {
+    article {
+        margin: 100px 5px;
+        padding: 20px;
+    }
+
+    section h1 {
+        margin: 20px;
+    }
+
+    .content {
+        margin: 10px 0px;
+        padding: 0px 0px;
+    }
+
+    .content img {
+        margin: 20px 0px;
+        width: 100%;
+    }
 }

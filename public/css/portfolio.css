@@ -13,14 +13,25 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 0.3s;
+    transition: 0.8s;
     transform: translate(0px, 25px);
+
+}
+
+.content:hover a {
+    opacity: 0.2;
+    transition: 0.3s;
+}
+
+.content a:hover {
+    opacity: 1;
 }
 
 .card:hover {
     transform: skew(0deg);
     border: var(--border-5);
     box-shadow: none;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(34, 34, 34, 0.154));
 }
 
 .card h1 {

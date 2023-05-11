@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="css/project.css">
 {% endblock stylesheets %}
 {% block javascripts %}
-<script src="js/index.js"></script>
+{{ parent() }}
+<script defer src="js/slide.js"></script>
 {% endblock javascripts %}
 
 {% block body %}
@@ -39,16 +40,16 @@
         <article class="technology">
             <h2>Technologies Utilisées</h2>
             <div class="logo">
-                <img src="{{projects.technology}}" alt="image technologie" width="1000px">
+                <img src="{{projects.technology}}" alt="image technologie">
             </div>
         </article>
         <article class="picture">
             <h2>Photo du projet</h2>
-            <div class="other_picture">
-                <img src="{{projects.img1}}" alt="image1" width="500px">
-                <img src="{{projects.img2}}" alt="image2" width="500px">
-                <img src="{{projects.img3}}" alt="image3" width="500px">
-                <img src="{{projects.img4}}" alt="image4" width="500px">
+            <div id="slider" class="other_picture">
+                <img src="{{projects.img1}}" alt="image1">
+                <img src="{{projects.img2}}" alt="image2">
+                <img src="{{projects.img3}}" alt="image3">
+                <img src="{{projects.img4}}" alt="image4">
             </div>
         </article>
     </div>
