@@ -8,31 +8,53 @@
 {% endblock stylesheets %}
 {% block javascripts %}
 {{ parent() }}
-<script defer src="js/slide.js"></script>
+<script defer src="js/slider.js"></script>
 {% endblock javascripts %}
 
 {% block body %}
 <style>
     body {
-        background: url("{{projects.img1}}");
+        background: url("../images/background.webp");
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: 100vh contain;
+        background-size: cover;
     }
 </style>
 <div class="project d-flex flex-column justify-content-center">
     <div class="ProjectName">
     </div>
-    <div class=" content">
+    <div class="content">
         <article class="resume">
             <h2>{{projects.title}}</h2>
             <div class="block">
                 {{projects.resume}}
             </div>
         </article>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="{{projects.img1}}" alt="image1" style="width: 100%; height: 750px;">
+            </div>
+            <div class="mySlides">
+                <img src="{{projects.img2}}" alt="image2" style="width: 100%; height: 750px;">
+            </div>
+            <div class="mySlides">
+                <img src="{{projects.img3}}" alt="image3" style="width: 100%; height: 750px;">
+            </div>
+            <div class="mySlides">
+                <img src="{{projects.img4}}" alt="image4" style="width: 100%; height: 750px;">
+            </div>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="dots" style="text-align: center;">
+                <span class="dot" onclick="currentSlides(1)"></span>
+                <span class="dot" onclick="currentSlides(2)"></span>
+                <span class="dot" onclick="currentSlides(3)"></span>
+                <span class="dot" onclick="currentSlides(4)"></span>
+            </div>
+        </div>
 
         <article class="missions">
-            <h2>Missions et Conclusion du projet:</h2>
+            <h2>Réalisation du projet :</h2>
             <div class="block">
                 {{projects.assignments}}
             </div>
@@ -41,15 +63,6 @@
             <h2>Technologies Utilisées</h2>
             <div class="logo">
                 <img src="{{projects.technology}}" alt="image technologie">
-            </div>
-        </article>
-        <article class="picture">
-            <h2>Photo du projet</h2>
-            <div id="slider" class="other_picture">
-                <img src="{{projects.img1}}" alt="image1">
-                <img src="{{projects.img2}}" alt="image2">
-                <img src="{{projects.img3}}" alt="image3">
-                <img src="{{projects.img4}}" alt="image4">
             </div>
         </article>
     </div>

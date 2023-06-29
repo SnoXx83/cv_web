@@ -1,36 +1,44 @@
-{# <div class="profil m-20">
-    <a class="d-flex align-items-center " href="{{path('aboutme')}}">
-        <img src="{{asset('images/profil.jpg')}}" alt="photo_de_profil">
-        <h1 class="m-10">Maxime <br> Larquetoux</h1>
-    </a>
-</div> #}
-
 <nav class="header">
     <div id="menu">
         <div class="profil">
             <a class="d-flex align-items-center" href="{{path('profil')}}">
-                <img src="images/profil.jpg" alt="photo_de_profil">
+                <img src="images/profil.webp" alt="photo_de_profil">
                 <h1 class="m-10">Maxime Larquetoux</h1>
             </a>
         </div>
         <div class="navbar">
-            <a href="{{path('home')}}">
+            <a href="{{path('home')}}" 
+            {% if app.request.pathinfo == path('home') %}
+                class="active"
+            {% endif %}
+            >
                 <i class="fa-solid fa-house m-10" style="color: #ffffff;"></i>
                 Accueil
             </a>
-            <a href="{{path('portfolio')}}">
+            <a href="{{path('portfolio')}}"
+            {% if app.request.pathinfo == path('portfolio') %}
+                class="active"
+            {% endif %}>
                 <i class="fa-regular fa-folder-open m-10" style="color: #ffffff;"></i>
                 Portfolio
             </a>
-            <a href="{{path('experience')}}">
+            <a href="{{path('experience')}}"
+            {% if app.request.pathinfo == path('experience') %}
+                class="active"
+            {% endif %}
+            >
                 <i class="fa-solid fa-briefcase m-10" style="color: #f4f5f6;"></i>
                 Experiences
             </a>
-            <a href="#">
+            {# <a href="#">
                 <i class="fa-solid fa-book m-10" style="color: #ffffff;"></i>
                 Compétences
-            </a>
-            <a href="{{path('profil')}}">
+            </a> #}
+            <a href="{{path('profil')}}"
+            {% if app.request.pathinfo == path('profil') %}
+                class="active"
+            {% endif %}
+            >
                 <i class="fa-solid fa-user m-10" style="color: #ffffff;"></i>
                 A propos
             </a>
@@ -50,10 +58,6 @@
         <a href="{{path('experience')}}">
             <i class="fa-solid fa-briefcase m-10" style="color: #f4f5f6;"></i>
             Experiences
-        </a>
-        <a href="#">
-            <i class="fa-solid fa-book m-10" style="color: #ffffff;"></i>
-            Compétences
         </a>
         <a href="{{path('profil')}}">
             <i class="fa-solid fa-user m-10" style="color: #ffffff;"></i>

@@ -1,61 +1,99 @@
-.project {
-    text-align: center;
-}
-
-.project h2 {
+h2 {
+    margin-bottom: 100px;
     color: var(--secondary);
+    font-size: xx-large;
 }
-
 .project div .content {
-    margin: 0px 200px;
     text-align: center;
     font-size: large;
     margin-bottom: 50px;
 }
 
-.ProjectName {
-    height: 820px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.content{
+    margin: 200px;
 }
 
-.ProjectName .title {
-    color: var(--secondary);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 55px;
-    margin: 0px 350px;
-}
-
-.ProjectName img {
-    margin-bottom: 500px;
+.resume{
+    background-color: #182437;
 }
 
 article {
-    border-bottom: 2px solid var(--primary);
+    margin-bottom: 250px;
+    text-align: center;
     overflow: hidden;
-    padding: 0px 250px 300px 250px;
-}
-
-.content {
-    background-color: var(--color-dark);
-    box-shadow: 0px 3px 5px;
-}
-
-.resume {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    padding: 10%;
 }
 
 .block {
-    margin: 0px 0px;
     font-size: x-large;
     color: var(--primary);
 }
 
+.resume {
+    border-top: 1px solid rgb(2, 200, 255);
+    border-bottom: 1px solid rgb(2, 200, 255);
+}
+
+/* Slider */
+.mySlides{
+    display: none;
+    border: 10px double var(--secondary);
+}
+
+img{  
+    max-height: 700px;
+    vertical-align: middle;
+}
+.slideshow-container{
+
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    max-width: 80%;
+    position: relative;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 20px;
+    margin-top: -50px;
+    margin: -50px 10px 0 10px;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 55px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    color: var(--secondary);
+    background-color: rgba(0, 0, 0, 0.612);
+}
+.dots{
+    margin-top: -35px;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.active, .dot:hover{
+    background-color: var(--secondary);
+}
+
 .missions {
+    border-top: 1px solid rgb(2, 200, 255);
+    border-bottom: 1px solid rgb(2, 200, 255);
     background-color: #182437;
 }
 
@@ -69,40 +107,16 @@ article {
     width: 100%;
 }
 
-#slider {
-    width: 40%;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#slider img {
-    width: 100%;
-    margin-bottom: 100px;
-    border: 10px double var(--secondary);
-    box-shadow: var(--box-shadow);
-
-}
-
-.picture {
-    background-color: #182437;
-    padding: 50px 0px;
-
-}
-
-.other_picture img {
-    border: 1px solid black;
-    margin: 5px;
-}
-
-h2 {
-    padding: 200px 0px 150px 0px;
-    font-size: xx-large;
+@media screen and (max-width:1650px) {
+    .ProjectName{
+        height: 500px;
+    }
 }
 
 @media screen and (max-width:1200px) {
+    .ProjectName{
+        height: 400px;
+    }
     article {
         padding: 0px 100px 250px 100px;
     }
@@ -123,7 +137,7 @@ h2 {
         text-align: justify;
     }
 
-    #slider {
+    #block_img {
         width: 100%;
     }
 

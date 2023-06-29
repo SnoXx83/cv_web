@@ -1,5 +1,13 @@
 
 "use strict";
+
+//on lance un chargement
+const loader = document.querySelector('.custom-loader');
+const backgroundLoader = document.querySelector('.background-loader');
+window.addEventListener('load', () => {
+    loader.classList.add('fondu-out');
+    backgroundLoader.style.display = "none";
+})
 window.addEventListener("DOMContentLoaded", (event) => {
     /* MENU */
     const LeMenu = document.getElementById("slidebar");

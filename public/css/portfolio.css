@@ -1,5 +1,5 @@
 body {
-    background: url('../images/bg.jpg');
+    background: url('../images/background.webp');
     background-size: cover;
 }
 
@@ -31,7 +31,6 @@ body {
     transform: skew(0deg);
     border: var(--border-5);
     box-shadow: none;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(34, 34, 34, 0.154));
 }
 
 .card h1 {
