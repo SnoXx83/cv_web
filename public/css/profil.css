@@ -14,26 +14,27 @@ h2 {
 }
 
 .about {
-    padding: 300px 300px 0px 300px;
-    margin-top: 850px;
+    padding: 100px 300px 0px 300px;
 }
 
 
 .speech {
-    border: 2px solid var(--secondary);
-    margin-top: -45%;
+    margin: 150px 150px 0px 150px;
     padding: 100px;
     text-align: center;
     font-size: 20px;
     background: var(--color-dark);
+    border: 2px solid var(--secondary);
     border-radius: 20px;
     box-shadow: 1px 2px 15px black;
 }
 
 .speech img {
+    /* position: absolute;
+    top: -25%; */
+    margin-top: -200px;
     border: 5px solid var(--color-dark);
     border-radius: 50%;
-    margin-top: -200px;
 }
 
 .speech h1 {
@@ -45,8 +46,7 @@ h2 {
 }
 
 .speech img,
-h1,
-p {
+h1{
     margin-bottom: 70px;
 }
 
@@ -64,11 +64,11 @@ section p {
 }
 
 .search {
-    padding: 200px;
+    padding: 250px;
 }
 
 .img_portfolio {
-    padding: 150px 0px;
+    padding: 50px 0px;
     background-color: var(--color-dark);
     border-top: 5px solid var(--secondary);
     border-bottom: 5px solid var(--secondary);
@@ -100,7 +100,7 @@ section p {
 }
 
 .reseaux {
-    padding: 200px;
+    padding-top: 150px;
 }
 
 .icons {
@@ -126,11 +126,8 @@ section p {
 
 @media screen and (max-width:1500px) {
     .about {
-        padding: 0% 10%;
-    }
-
-    .speech {
-        margin: 0% 10%;
+    padding: 200px 100px 0px 100px;
+        
     }
 }
 
@@ -145,25 +142,18 @@ section p {
 }
 
 @media screen and (max-width:950px) {
-    .about {
-        padding: 0% 0%;
+    
+    .search {
+        padding: 250px 50px;
     }
-
-    section {
+    /* section {
         margin: 250px 50px;
-    }
+    } */
 
     .block img {
         width: 100%;
         margin: 15px;
     }
-}
-
-@media screen and (max-width:950px) {
-    .block img {
-        width: 100%;
-    }
-
     .reseaux {
         flex-wrap: wrap;
     }
